@@ -14,7 +14,7 @@ tailscale up \
   --hostname=salad-comfyui \
   --accept-dns=false
 
-tailscale serve --bg 7860
+tailscale serve --bg --http=80 7860
 
 cd /opt/ComfyUI
 exec python main.py --listen 127.0.0.1 --port 7860
